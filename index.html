@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PenguinPong 1.0.0</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu" id="mainMenu">
+    <h1>PenguinPong</h1>
+    <button id="startBtn">Start Game</button>
+    </div>
+
+    <div class="menu hidden" id="modeMenu">
+    <h1>Select Mode</h1>
+    <p>Choose your game mode</p>
+    <button id="onePlayerBtn">1 Player</button>
+    <button id="twoPlayerBtn">2 Players</button>
+    <button id="backBtn">Back</button>
+    </div>
+
+        <div class="game-wrapper hidden" id="gameWrapper">
+    <div class="canvas-container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <h2 id="winnerText"></h2>
+                <p id="finalScore"></p>
+                <button id="restartBtn">Back to Menu</button>
+            </div>
+
+            <div class="scoreboard">
+        <div class="score-item">
+        <span class="label" id="player1Label">You</span>
+        <span id="playerScore" class="score">0</span>
+        </div>
+        <div class="score-item">
+        <span class="label" id="player2Label">Opponent</span>
+        <span id="aiScore" class="score">0</span>
+        </div>
+        </div>
+        </div>
+
+<div class="footer-info">
+    <p>Penguin Pong version 1.0.0</p>
+    <p>Developed by SwedishPenguin</p>
+</div>
+
+    </div>
+    <script src="src/game.js"></script>
+</body>
+</html>
